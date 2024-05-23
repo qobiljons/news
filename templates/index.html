@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body, h1, li, ul{
+        margin: 0px;
+        padding:0px;
+        }
+        h1{
+        background-color: black;
+        color: white;
+        }
+        li{
+        background-color: red;
+        margin-top:5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 >Daily News</h1>
+    <ul>
+        {%for post in object_list%}
+            <li>{{post.title}} <br> {{post.body}}</li>
+        {%endfor%}
+    </ul>
+</body>
+</html>
